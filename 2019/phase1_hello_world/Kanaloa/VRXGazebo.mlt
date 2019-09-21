@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mlt LC_NUMERIC="C" version="6.17.0" title="Shotcut version 19.09.14" producer="main_bin">
+  <profile description="HD 1080p 25 fps" width="1366" height="768" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="1366" display_aspect_den="768" frame_rate_num="15" frame_rate_den="1" colorspace="709"/>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:02:59.067">
+    <property name="length">2687</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/jordan/Downloads/shotcut-linux-x86_64-190914/Shotcut/Shotcut.app/0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgb24a</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:02:59.067"/>
+  </playlist>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <property name="shotcut:lock">0</property>
+    <blank length="00:00:00.067"/>
+  </playlist>
+  <producer id="producer0" title="Anonymous Submission" in="00:00:00.000" out="03:59:59.933">
+    <property name="length">04:00:00:00</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/jordan/Pictures/Run_VRX_Gazebo.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2019-09-20T07:55:38</property>
+    <property name="shotcut:hash">7a9ce1694a6887f901c0d89d7937b36c</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter0" out="00:00:03.933">
+      <property name="argument">Ran 6th task of the VRX competion</property>
+      <property name="geometry">0 0 1366 768 1</property>
+      <property name="family">Sans</property>
+      <property name="size">768</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#ffffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">15</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+  </producer>
+  <producer id="producer1" title="Anonymous Submission" in="00:00:00.000" out="00:03:05.600">
+    <property name="length">00:03:05:10</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/jordan/Videos/Gazebo_test.avi</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-09-20T10:01:42</property>
+    <property name="shotcut:hash">65bad628c019a38e2c1c9c583d323f10</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">Gazebo_test.avi</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter1" out="00:00:56.467">
+      <property name="mlt_service">webvfx</property>
+      <property name="disable">1</property>
+      <property name="resource">plain:Blank HTML 1/blank.html</property>
+      <property name="factory">loader</property>
+    </filter>
+    <filter id="filter2" out="00:00:56.467">
+      <property name="argument">Test drive</property>
+      <property name="geometry">603 489 702 274 1</property>
+      <property name="family">Sans</property>
+      <property name="size">768</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#ffffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">15</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="disable">0</property>
+    </filter>
+  </producer>
+  <producer id="producer3" title="Anonymous Submission" in="00:00:00.000" out="00:00:55.400">
+    <property name="length">00:00:55:07</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/jordan/Videos/scan_the_code.mp4</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-09-14T22:30:37</property>
+    <property name="shotcut:hash">071d370a3c78e418ee448c031a8aa708</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">scan_the_code.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter4" out="00:00:12.133">
+      <property name="argument">Scan_the_Code script
+works in Gazebo</property>
+      <property name="geometry">78 113 1227 657 1</property>
+      <property name="family">Sans</property>
+      <property name="size">384</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#ffffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">32</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">15</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+  </producer>
+  <producer id="producer2" title="Anonymous Submission" in="00:00:00.000" out="00:00:55.400">
+    <property name="length">00:00:55:07</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/jordan/Videos/scan_the_code.mp4</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-09-14T22:30:37</property>
+    <property name="shotcut:hash">071d370a3c78e418ee448c031a8aa708</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">scan_the_code.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter3" in="00:00:10.933" out="00:00:35.200">
+      <property name="argument">The 3 color filters
+scan </property>
+      <property name="geometry">58 387 771 380 1</property>
+      <property name="family">Sans</property>
+      <property name="size">384</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#ffffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">32</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">15</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="disable">1</property>
+    </filter>
+    <filter id="filter5" in="00:00:10.933" out="00:00:35.200">
+      <property name="filter">frei0r.alphaspot</property>
+      <property name="mlt_service">mask_start</property>
+      <property name="shotcut:filter">maskSimpleShape</property>
+      <property name="filter.9">0.75</property>
+      <property name="filter.0">0</property>
+      <property name="filter.1">0.5</property>
+      <property name="filter.2">0.5</property>
+      <property name="filter.3">0.100001</property>
+      <property name="filter.4">0.100001</property>
+      <property name="filter.5">0.5</property>
+      <property name="filter.6">0.2</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter6" in="00:00:10.933" out="00:00:35.200">
+      <property name="filter">shape</property>
+      <property name="mlt_service">mask_start</property>
+      <property name="shotcut:filter">maskFromFile</property>
+      <property name="filter.mix">50</property>
+      <property name="filter.softness">0</property>
+      <property name="filter.invert">0</property>
+      <property name="filter.use_luminance">1</property>
+      <property name="filter.resource">/home/jordan/Downloads/shapes.mlt</property>
+      <property name="filter.use_mix">1</property>
+      <property name="filter.audio_match">0</property>
+      <property name="disable">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+    <filter id="filter7" in="00:00:10.933" out="00:00:35.200">
+      <property name="transition">frei0r.composition</property>
+      <property name="mlt_image_format">rgb24a</property>
+      <property name="mlt_service">mask_apply</property>
+      <property name="disable">0</property>
+    </filter>
+  </producer>
+  <producer id="producer5" title="Anonymous Submission" in="00:00:00.000" out="00:00:55.400">
+    <property name="length">00:00:55:07</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/jordan/Videos/scan_the_code.mp4</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-09-14T22:30:37</property>
+    <property name="shotcut:hash">071d370a3c78e418ee448c031a8aa708</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">scan_the_code.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter8" in="00:00:35.267" out="00:00:48.333">
+      <property name="argument">Scan_the_Code script
+works in Gazebo</property>
+      <property name="geometry">0 0 1366 768 1</property>
+      <property name="family">Sans</property>
+      <property name="size">384</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#ffffffff</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">32</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">15</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="disable">1</property>
+    </filter>
+  </producer>
+  <producer id="producer6" title="Anonymous Submission" in="00:00:00.000" out="00:01:10.133">
+    <property name="length">00:01:10:03</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/jordan/Downloads/VRX_bag_in_gui.mp4</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-09-17T21:49:23</property>
+    <property name="shotcut:hash">d82c948731e6e228f43bcb1ca24f9c99</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">VRX_bag_in_gui.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter9" out="00:00:10.267">
+      <property name="argument">Test custome GUI</property>
+      <property name="geometry">0 298 676 385 1</property>
+      <property name="family">Sans</property>
+      <property name="size">768</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#000000</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">3</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+  </producer>
+  <producer id="producer7" title="Anonymous Submission" in="00:00:00.000" out="00:01:10.133">
+    <property name="length">00:01:10:03</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/jordan/Downloads/VRX_bag_in_gui.mp4</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-09-17T21:49:23</property>
+    <property name="shotcut:hash">d82c948731e6e228f43bcb1ca24f9c99</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">VRX_bag_in_gui.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter10" in="00:00:10.333" out="00:00:19.067">
+      <property name="argument">Multiple views
+of the boat</property>
+      <property name="geometry">2 359 676 385 1</property>
+      <property name="family">Sans</property>
+      <property name="size">384</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#000000</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">3</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+  </producer>
+  <producer id="producer8" title="Anonymous Submission" in="00:00:00.000" out="00:01:10.133">
+    <property name="length">00:01:10:03</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/jordan/Downloads/VRX_bag_in_gui.mp4</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-09-17T21:49:23</property>
+    <property name="shotcut:hash">d82c948731e6e228f43bcb1ca24f9c99</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">VRX_bag_in_gui.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter11" in="00:00:19.133" out="00:00:28.267">
+      <property name="argument">Video from WAMV
+camera</property>
+      <property name="geometry">0 326 676 385 1</property>
+      <property name="family">Sans</property>
+      <property name="size">384</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#000000</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">3</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+  </producer>
+  <producer id="producer9" title="Anonymous Submission" in="00:00:00.000" out="00:01:10.133">
+    <property name="length">00:01:10:03</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/jordan/Downloads/VRX_bag_in_gui.mp4</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-09-17T21:49:23</property>
+    <property name="shotcut:hash">d82c948731e6e228f43bcb1ca24f9c99</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">VRX_bag_in_gui.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter12" in="00:00:28.333" out="00:00:36.667">
+      <property name="argument">Boat position
+on virtual map</property>
+      <property name="geometry">-2 361 676 385 1</property>
+      <property name="family">Sans</property>
+      <property name="size">384</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#000000</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">3</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+  </producer>
+  <producer id="producer10" title="Anonymous Submission" in="00:00:00.000" out="00:01:10.133">
+    <property name="length">00:01:10:03</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/jordan/Downloads/VRX_bag_in_gui.mp4</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="creation_time">2019-09-17T21:49:23</property>
+    <property name="shotcut:hash">d82c948731e6e228f43bcb1ca24f9c99</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">VRX_bag_in_gui.mp4</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter13" in="00:00:36.733" out="00:01:10.133">
+      <property name="argument">And more features
+in the future</property>
+      <property name="geometry">17 383 636 333 1</property>
+      <property name="family">Sans</property>
+      <property name="size">384</property>
+      <property name="weight">500</property>
+      <property name="style">normal</property>
+      <property name="fgcolour">#000000</property>
+      <property name="bgcolour">#00000000</property>
+      <property name="olcolour">#aa000000</property>
+      <property name="pad">0</property>
+      <property name="halign">center</property>
+      <property name="valign">bottom</property>
+      <property name="outline">3</property>
+      <property name="mlt_service">dynamictext</property>
+      <property name="shotcut:filter">dynamicText</property>
+      <property name="shotcut:usePointSize">0</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+    </filter>
+  </producer>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <property name="shotcut:lock">0</property>
+    <entry producer="producer0" in="00:00:00.000" out="00:00:03.933"/>
+    <entry producer="producer1" in="00:00:00.000" out="00:00:56.467"/>
+    <entry producer="producer3" in="00:00:00.000" out="00:00:12.133"/>
+    <entry producer="producer2" in="00:00:10.933" out="00:00:35.200"/>
+    <entry producer="producer5" in="00:00:36.533" out="00:00:48.333"/>
+    <entry producer="producer6" in="00:00:00.000" out="00:00:10.267"/>
+    <entry producer="producer7" in="00:00:10.333" out="00:00:19.067"/>
+    <entry producer="producer8" in="00:00:19.133" out="00:00:28.267"/>
+    <entry producer="producer9" in="00:00:28.333" out="00:00:36.667"/>
+    <entry producer="producer10" in="00:00:36.733" out="00:01:10.133"/>
+  </playlist>
+  <playlist id="playlist2">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V3</property>
+    <blank length="00:00:00.067"/>
+  </playlist>
+  <playlist id="playlist3">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V4</property>
+    <blank length="00:00:00.067"/>
+  </playlist>
+  <playlist id="playlist4">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V5</property>
+    <blank length="00:00:00.067"/>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 19.09.14" global_feed="1" in="00:00:00.000" out="00:02:59.067">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:scaleFactor">0.410785</property>
+    <property name="shotcut:trackHeight">30</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <track producer="playlist1"/>
+    <track producer="playlist2"/>
+    <track producer="playlist3"/>
+    <track producer="playlist4"/>
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition4">
+      <property name="a_track">0</property>
+      <property name="b_track">3</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition5">
+      <property name="a_track">1</property>
+      <property name="b_track">3</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition6">
+      <property name="a_track">0</property>
+      <property name="b_track">4</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition7">
+      <property name="a_track">1</property>
+      <property name="b_track">4</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition8">
+      <property name="a_track">0</property>
+      <property name="b_track">5</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition9">
+      <property name="a_track">1</property>
+      <property name="b_track">5</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="disable">0</property>
+    </transition>
+  </tractor>
+</mlt>
