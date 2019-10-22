@@ -1,0 +1,3 @@
+After many attempts trying to get a docker image to run labview our time has run out. The team is working on gettiung docker to be compatible with labview however this is a harder task than expected. So to meet the challange the team has delivered a docker_image that contains the launch files neccessary to complete the tasks. 
+
+A zip folder includes the build files for the labview scripts needed to run the competition. In order to run the tasks the user must first run the labview installer on a Windows machine. Then run Controls.exe and the Path_planner.exe. In the Controls.exe please ensure that bypass is pressed. Next you may launch the ros gazebo file. Lastly run the <TaskName>.exe script and enter the IP address of the linux machines to run the script. 
