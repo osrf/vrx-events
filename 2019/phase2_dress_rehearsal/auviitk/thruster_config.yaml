@@ -1,0 +1,17 @@
+engine:
+  - prefix: "left_front"
+    position: "-2.25 1.0 0.0"
+    orientation: "0.0 0.0 1.0"
+  - prefix: "right_front"
+    position: "-2.25 -1.0 0.0"
+    orientation: "0.0 0.0 -1.0"
+
+  # Adding back thrusters
+  - prefix: "left_rear"
+    position: "1.0 1.0 0.0"
+    orientation: "0.0 0.0 -0.785"
+  - prefix: "right_rear"
+    position: "1.0 -1.0 0.0"
+    orientation: "0.0 0.0 0.785"
+
+
