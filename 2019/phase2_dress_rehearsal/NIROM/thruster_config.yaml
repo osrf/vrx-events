@@ -1,0 +1,36 @@
+engine:
+
+# Rear thruster
+  - prefix: "left_r"
+    position: "-2.25 1 0.318237"
+    orientation: "0.0 0.0 0.0"
+  - prefix: "right_r"
+    position: "-2.25 -1 0.318237"
+    orientation: "0.0 0.0 0.0"
+
+# front thruster
+  - prefix: "left_f"
+    position: "1 1 0.318237"
+    orientation: "0.0 0.0 1.5707"
+  - prefix: "right_f"
+    position: "1 -1 0.318237"
+    orientation: "0.0 0.0 -1.5707"
+
+
+
+# Rear thruster (x original : -2.373776)
+#  - prefix: "left_r"
+#    position: "-2.5 1.027135 0.318237"
+#    orientation: "0.0 0.0 0.0"
+#  - prefix: "right_r"
+#    position: "-2.5 -1.027135 0.318237"
+#    orientation: "0.0 0.0 0.0"
+
+# front thruster
+#  - prefix: "left_f"
+#    position: "1.5 1.027135 0.318237"
+#    orientation: "0.0 0.0 0.0"
+#  - prefix: "right_f"
+#    position: "1.5 -1.027135 0.318237"
+#    orientation: "0.0 0.0 0.0"
+
