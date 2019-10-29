@@ -1,1 +1,1 @@
-tychien/ntu_vrx_dockertest:latest
+tychien/ntu_vrx_dockertest:entrypoint5
