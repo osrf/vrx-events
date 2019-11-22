@@ -1,0 +1,36 @@
+# Values straight from ASV_URDF.URDF
+# engine:
+#   - prefix: "thruster_aft_left_joint"
+#     position: "-3.18896408543883 0.895572083300461 -1.45821834832611"
+#     orientation: "0.183988099348952 0.180950628372811 -2.33945568059245"
+
+#   - prefix: "thruster_aft_right_joint"
+#     position: "-3.2316 -0.88696 -1.4405"
+#     orientation: "-0.17914 0.17633 2.3403"
+
+#   - prefix: "thruster_fore_left_joint"
+#     position: "0.072495 0.87529 -1.4709"
+#     orientation: "0.0028181 -0.002818 2.3562"
+
+#   - prefix: "thruster_fore_right_joint"
+#     position: "0.11599 -0.87009 -1.4711"
+#     orientation: "-0.0028181 -0.002818 -2.3562"
+
+
+# modified values to fit VRX constraints due to difference in base_link
+engine:
+  - prefix: "thruster_aft_left_joint"
+    position: "-2.373776 1.027135 0.318237"
+    orientation: "0.183988099348952 0.180950628372811 0.802045"
+
+  - prefix: "thruster_aft_right_joint"
+    position: "-2.373776 -1.027135 0.318237"
+    orientation: "-0.17914 0.17633 -0.802045"
+
+  - prefix: "thruster_fore_left_joint"
+    position: "1.5 0.7  0.25"
+    orientation: "0.0028181 -0.002818 2.3403"
+
+  - prefix: "thruster_fore_right_joint"
+    position: "1.5 -0.7 0.25"
+    orientation: "-0.0028181 -0.002818 -2.33945568059245"
