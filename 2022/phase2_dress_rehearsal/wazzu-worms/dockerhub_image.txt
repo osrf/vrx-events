@@ -1,1 +1,1 @@
-wazzuworms/dockerhub_image:v12.2022  
+wazzuworms/dockerhub_image:v13.2022  
