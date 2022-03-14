@@ -1,0 +1,9 @@
+mb_marker_buoy_black
+mb_marker_buoy_red
+mb_marker_buoy_green
+mb_marker_buoy_white
+mb_round_buoy_black
+mb_round_buoy_orange
+crocodile
+turtle
+platypus

@@ -1,0 +1,14 @@
+<launch>
+
+    <rosparam command="load" file="$(find robowalrus)/params/controller_params.yaml"/>
+
+    <!-- Full Controller for Competition -->
+    <node name="state_estimation_node" pkg="robowalrus" type="state_estimation_node.py" output="log" required="true"/>
+    <node name="trajectory_tracker_node" pkg="robowalrus" type="trajectory_tracker_node.py" output="screen" required="true"/>
+    <node name="heading_control_node" pkg="robowalrus" type="heading_control_node.py" output="screen" required="true"/>
+    <node name="control_allocation_node" pkg="robowalrus" type="control_allocation_node.py" output="screen" required="true"/>
+    <node name="trajectory_generation_task1_node" pkg="robowalrus" type="trajectory_generation_task1_node.py" output="screen" required="true"/>
+    <node name="trajectory_generation_task2_node" pkg="robowalrus" type="trajectory_generation_task2_node.py" output="screen" required="true"/>
+    <node name="object_characterization" pkg="robowalrus" type="object_characterization_node.py" output="screen" required="true"/>
+    <node name="object_localization" pkg="robowalrus" type="object_localization_node.py" output="screen" required="true"/>
+</launch>
