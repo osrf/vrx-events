@@ -133,6 +133,9 @@ class middle_camera:
 def main():
     format = "%(asctime)s: %(message)s"
     logging.basicConfig(format=format, level=logging.INFO,  datefmt="%H:%M:%S")
+
+    #More cameras could be added
+    node = middle_camera()
     
     def handler(*args):
         node.run = False
@@ -147,8 +150,6 @@ def main():
     try:
         logging.info('Main: Initialize middle camera node')
 
-        #More cameras could be added
-        node = middle_camera()
         x = threading.Thread(target=node.image_processing)
 
         logging.info('Main: Starting image processing thread')

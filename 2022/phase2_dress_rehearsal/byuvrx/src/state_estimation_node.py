@@ -5,7 +5,6 @@ import numpy as np
 import inekf
 import math
 import time
-# import faulthandler
 
 # ROS imports
 import rospy
@@ -23,7 +22,6 @@ from inekf import SE3, InEKF, ERROR
 
 # local imports
 from robowalrus.msg import VRXState
-#import tools.enable_table as ENABLE 
 from tools import enable_table
 
 class StateEstimationNode:
@@ -41,16 +39,17 @@ class StateEstimationNode:
 
         """
 
-        # set up initial state of inekf
-        # faulthandler.enable()
-        self.globe_radius = 6370.0*pow(10, 3)
+        # Variables used to maintaining correct ordering of sensors/published messages
         self.first_gps_reading = True
         self.first_imu_reading = True
         self.first_pose_reading = True
-        self.prev_psi_reading = 0.0
-        self.xi = np.zeros(15)
         self.init_sensors()
 
+        # parameters
+        self.globe_radius = rospy.get_param('state_estimation/globe_radius')
+
+        # Creat self variables and initialize values
+        self.prev_psi_reading = 0.0
         self.init_lat = 0.0
         self.init_long = 0.0
         self.t = 0.0
@@ -68,6 +67,7 @@ class StateEstimationNode:
         self.last_imu_time_stamp = 0.0
 
         self.sigma = 1/15
+        Ts = 1/15
         self.beta = (2.0*self.sigma-1/15)/(2.0*self.sigma+1/15)
 
         self.enabled = False
@@ -321,23 +321,25 @@ class StateEstimationNode:
         """
         :init_sensors: This initializes the iekf, sets noise parameters
         """
-        b = np.array([0, 0, 0, 0, 1])
-        n = np.array([pow(.85, 2), pow(.85, 2), pow(2, 2)])
+        self.xi = np.zeros(15)
+
+        b = np.array(rospy.get_param('state_estimation/inekf/gps_position/b'))
+        # standard deviations
+        sigma = rospy.get_param('state_estimation/inekf/gps_position/sigma')
+        n = np.array([pow(sigma[0], 2), pow(sigma[1], 2), pow(sigma[2], 2)])
         noise = np.diag(n)
         self.gps = inekf.GenericMeasureModel[inekf.SE3[2, 6]](
             b, noise, inekf.ERROR.LEFT)
 
-        b = np.array([0, 0, 0, 1, 0])
-        n = np.array([pow(.1, 2), pow(.1, 2), pow(.1, 2)])
+        b = np.array(rospy.get_param('state_estimation/inekf/gps_velocity/b'))
+        sigma = rospy.get_param('state_estimation/inekf/gps_velocity/sigma')
+        n = np.array([pow(sigma[0], 2), pow(sigma[1], 2), pow(sigma[2], 2)])
         noise = np.diag(n)
         self.gps_vel = inekf.GenericMeasureModel[inekf.SE3[2, 6]](
             b, noise, inekf.ERROR.LEFT)
 
         # TODO use our estimated initial data
-        s = [math.radians(.8), math.radians(.8), math.radians(.8),
-             .1, .1, .1,
-             .85, .85, 2.0,
-             0, 0, 0, 0, 0, 0]
+        s = rospy.get_param('state_estimation/inekf/s')
 
         # we are using all zeros as the starting state xi
         # because we are treating our first reading as 0
@@ -348,10 +350,13 @@ class StateEstimationNode:
         self.iekf.addMeasureModel('gps', self.gps)
         self.iekf.addMeasureModel('gps_vel', self.gps_vel)
 
-        self.iekf.pModel.setAccelBiasNoise(.002 / 9.81)
-        self.iekf.pModel.setAccelNoise(.275 / 9.81)
-        self.iekf.pModel.setGyroBiasNoise(math.radians(.08))
-        self.iekf.pModel.setGyroNoise(math.radians(.8))
+        gravity = rospy.get_param('state_estimation/gravity')
+        self.iekf.pModel.setAccelBiasNoise(
+            rospy.get_param('state_estimation/inekf/accelerometer_bias_noise') / gravity)
+        self.iekf.pModel.setAccelNoise(
+            rospy.get_param('state_estimation/inekf/accelerometer_noise') / gravity)
+        self.iekf.pModel.setGyroBiasNoise(rospy.get_param('state_estimation/inekf/gyro_bias_noise'))
+        self.iekf.pModel.setGyroNoise(rospy.get_param('state_estimation/inekf/gyro_noise'))
 
         # dt was delta time, time since last measurement taken
         # 6 numbers in data were vel and acc, no orientation.

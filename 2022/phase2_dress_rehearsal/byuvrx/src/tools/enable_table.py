@@ -1,4 +1,4 @@
-TASK1 = 'stationkeeping'
+TASK1 = 'station_keeping'
 TASK2 = 'wayfinding'
 TASK3 = 'perception'
 TASK4 = ''

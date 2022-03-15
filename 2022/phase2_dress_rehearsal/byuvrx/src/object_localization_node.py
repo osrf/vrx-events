@@ -155,6 +155,8 @@ class lidar:
                 gps_long, gps_lat = self.lidar2gps(avg)
                 gps_msg = GeoPoseStamped()
                 gps_msg.header.frame_id = self.bounding_boxes[0].id
+                if gps_msg.header.frame_id == "turtle":
+                    gps_msg.header.frame_id = "mb_round_buoy_orange"
                 gps_msg.pose.position.latitude = gps_lat
                 gps_msg.pose.position.longitude = gps_long
                 self.gps_pub.publish(gps_msg)
