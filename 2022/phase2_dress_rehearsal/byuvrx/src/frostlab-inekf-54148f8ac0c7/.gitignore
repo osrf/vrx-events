@@ -1,6 +1,0 @@
-.vscode
-build*
-dist*
-secrets*
-release
-__pycache__
