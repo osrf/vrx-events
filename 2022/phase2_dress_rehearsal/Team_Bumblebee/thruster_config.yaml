@@ -1,0 +1,16 @@
+engine:
+  - prefix: "front_left"
+    position: "1.2982  0.8312  0.25"
+    orientation: "0 0 2.3403"
+
+  - prefix: "front_right"
+    position: "1.2982 -0.8312 0.25"
+    orientation: "0 0 -2.3403"
+
+  - prefix: "rear_left"
+    position: "-2.1988 1.1211 0.25"
+    orientation: "0 0 0.802045"
+
+  - prefix: "rear_right"
+    position: "-2.1988 -1.1211 0.25"
+    orientation: "0 0 -0.802045"
