@@ -29,3 +29,9 @@ wamv_ball_shooter:
       z: 1.3
       pitch: ${radians(-60)}
       yaw: 0
+lidar:
+    - name: lidar_wamv
+      type: 16_beam
+      x: 0.7
+      z: 1.6
+      P: 0.1
