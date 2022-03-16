@@ -1,0 +1,31 @@
+wamv_camera:
+    - name: front_left_camera
+      x: 0.75
+      y: 0.1
+      z: 1.5
+      P: ${radians(15)}
+    - name: front_right_camera
+      x: 0.75
+      y: -0.1
+      z: 1.8
+      P: ${radians(-10)}
+    - name: middle_right_camera
+      x: 0.5
+      y: -0.15
+      z: 2.1
+      P: ${radians(35)}
+      Y: ${radians(-180)}
+      post_Y: ${radians(-180)}
+wamv_gps:
+    - name: gps_wamv
+      x: -0.85
+wamv_imu:
+    - name: imu_wamv
+      y: -0.2
+wamv_ball_shooter:
+    - name: ball_shooter
+      x: 0.44
+      y: 0.05
+      z: 1.3
+      pitch: ${radians(-60)}
+      yaw: 0
