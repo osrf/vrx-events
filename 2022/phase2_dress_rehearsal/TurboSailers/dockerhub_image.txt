@@ -1,1 +1,1 @@
-anveshsom/vrx_turbotailers_sub:1.0
+anveshsom/vrx_turbosailers_sub:1.0
