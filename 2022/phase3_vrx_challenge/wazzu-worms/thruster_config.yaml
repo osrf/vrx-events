@@ -1,0 +1,25 @@
+# engine:
+#   - prefix: "backleft"
+#     position: "-2.25 1 0"
+#     orientation: "0.0 0.0 0.0"
+#   - prefix: "backright"
+#     position: "-2.25 -1 0"
+#     orientation: "0.0 0.0 0.0"
+#   - prefix: "frontleft"
+#     position: "1 1 0"
+#     orientation: "0.0 0.0 0.0"
+#   - prefix: "frontright"
+#     position: "1 -1 0"
+#     orientation: "0.0 0.0 0.0"
+
+engine:
+  - prefix: "left"
+    position: "-2.25 1 0"
+    orientation: "0.0 0.0 0.0"
+  - prefix: "right"
+    position: "-2.25 -1.0 0.0"
+    orientation: "0.0 0.0 0.0"
+  - prefix: "lateral"
+    position: "-0.05 0.0 0.0"
+    orientation: "0.0 0.0 0.0"
+
