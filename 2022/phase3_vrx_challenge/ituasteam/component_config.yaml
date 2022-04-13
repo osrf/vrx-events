@@ -6,11 +6,6 @@ wamv_camera:
     - name: front_right_camera
       x: 0.75
       y: -0.1
-      P: ${radians(-30)}
-    - name: middle_right_camera
-      x: 0.75
-      y: -0.3
-      Y: ${radians(-90)}
       P: ${radians(15)}
 wamv_gps:
     - name: gps_wamv
@@ -20,15 +15,12 @@ wamv_imu:
       y: -0.2
 lidar:
     - name: lidar_wamv
-      type: 32_beam
+      type: 16_beam
       P: ${radians(8)}
 wamv_ball_shooter:
     - name: ball_shooter
-      x: 0.54
-      y: 0.30
-      z: 1.30
-      pitch: -0.80
-      yaw: 0.10
-wamv_pinger:
-    - name: pinger
-      position: '1 0 -1'
+      x: 0.55 
+      y: -0.3 
+      z: 1.3
+      pitch: ${radians(-20)}
+      yaw: 0
