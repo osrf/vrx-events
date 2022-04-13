@@ -1,0 +1,13 @@
+engine:
+  - prefix: "left_rear"
+    position: "-1.75 0.55 0.25"
+    orientation: "0.0 0.0 -0.785"
+  - prefix: "right_rear"
+    position: "-1.75 -0.55 0.25"
+    orientation: "0.0 0.0 0.785"
+  - prefix: "left_front"
+    position: "1.6 0.55  0.25"
+    orientation: "0.0 0.0 -2.35619449"
+  - prefix: "right_front"
+    position: "1.6 -0.55 0.25"
+    orientation: "0.0 0.0 2.35619449"
