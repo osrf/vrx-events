@@ -1,1 +1,1 @@
-docker pull amore2122/amore_phase1:v3.2023
+amore2122/amore_phase1:v3.2023
