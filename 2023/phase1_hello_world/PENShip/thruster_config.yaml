@@ -7,4 +7,4 @@ engine:
     orientation: "0.0 0.0 0.0"
   - prefix: "middle"
     position: "0 0 0.318237"
-    orientation: "0.0 0.0 1.570796"
+    orientation: "0.0 0.0 0.0"
