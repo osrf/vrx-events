@@ -70,4 +70,3 @@ wamv_ball_shooter:
 wamv_pinger:
     - sensor_name: receiver
       position: 1.0 0 -1.0
-
