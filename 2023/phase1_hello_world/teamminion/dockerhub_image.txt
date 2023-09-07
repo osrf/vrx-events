@@ -1,1 +1,1 @@
-docker pull teamminion/hello_world:v3.2023
+teamminion/hello_world:v3.2023
