@@ -5,8 +5,3 @@ engine:
   - prefix: "right"
     position: "-2.373776 -1.027135 0.318237"
     orientation: "0.0 0.0 0.0"
-
-  # Adding new thruster in non-compliant position
-  - prefix: "second_right"
-    position: "-2.373776 -1.027135 0.318237"
-    orientation: "0.0 0.0 0.0"
