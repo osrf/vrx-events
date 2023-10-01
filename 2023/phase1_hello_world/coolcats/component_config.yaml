@@ -1,0 +1,24 @@
+# Too many cameras
+wamv_camera:
+    - name: front_left_camera
+      x: 0.75
+      y: 0.1
+      P: ${radians(15)}
+    - name: front_right_camera
+      x: 0.75
+      y: -0.1
+      P: ${radians(15)}
+    - name: front_far_left_camera
+      x: 0.75
+      y: 0.3
+      P: ${radians(15)}
+    - name: front_far_right_camera
+      x: 0.75
+      y: -0.3
+      P: ${radians(15)}
+    - name: middle_left_camera
+      x: 0.6
+      y: 0.4
+      P: ${radians(15)}
+      Y: ${radians(90)}
+      post_Y: ${radians(90)}
