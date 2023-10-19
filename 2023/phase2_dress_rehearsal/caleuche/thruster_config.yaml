@@ -1,0 +1,14 @@
+engine:
+  - prefix: "left_back"
+    position: "-2.373776 1.027135 0.318237"
+    orientation: "0.0 0.0 ${radians(40)}"
+  - prefix: "right_back"
+    position: "-2.373776 -1.027135 0.318237"
+    orientation: "0.0 0.0 ${radians(-40)}"
+  - prefix: "left_front"
+    position: "1.25 0.565 0.318237"
+    orientation: "0.0 0.0 ${radians(-40)}"
+  - prefix: "right_front"
+    position: "1.25 -0.565 0.318237"
+    orientation: "0.0 0.0 ${radians(40)}"
+  
