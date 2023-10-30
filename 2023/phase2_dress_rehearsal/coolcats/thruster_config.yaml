@@ -1,0 +1,13 @@
+engine:
+  - prefix: "left"
+    position: "-2.373776 1.027135 0.318237"
+    orientation: "0.0 0.0 0.0"
+  - prefix: "right"
+    position: "-2.373776 -1.027135 0.318237"
+    orientation: "0.0 0.0 0.0"
+  - prefix: "left2"
+    position: "1.6 0.7 0.25"
+    orientation: "0.0 0.0 0.0"
+  - prefix: "right2"
+    position: "1.6 -0.7 0.25"
+    orientation: "0.0 0.0 0.0"
