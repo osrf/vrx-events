@@ -2,10 +2,10 @@ wamv_camera:
     - name: front_left_camera
       visualize: False
       x: 0.75
-      y: 0.1
+      y: 0.0
       z: 1.5
       R: 0.0
-      P: 0.1
+      P: 0.09
       Y: 0.0
       post_Y: 0.0
     # - name: front_right_camera
@@ -49,7 +49,7 @@ lidar:
       y: 0.0
       z: 1.6
       R: 0.0
-      P: 0.1
+      P: 0.09
       Y: 0.0
       post_Y: 0.0
 wamv_ball_shooter:
@@ -62,4 +62,3 @@ wamv_ball_shooter:
 wamv_pinger:
     - sensor_name: receiver
       position: 1.0 0 -1.0
-
