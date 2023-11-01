@@ -1,0 +1,81 @@
+wamv_gps:
+    - name: gps
+      x: 0.5
+      y: 0
+      z: 1.3
+      R: 0
+      P: 0
+      Y: 0
+wamv_imu:
+    - name: imu
+      x: 0.5
+      y: 0
+      z: 1.3
+      R: 0
+      P: 0
+      Y: 0
+
+# note that camera and velodyne lidar position differs slightly from original asv due to 
+# vrx constraints and lidar appearing in camera fov
+wamv_camera:
+    - name: left_cam
+      visualize: True
+      x: 0.74
+      y: 0.5
+      z: 2.2
+      R: 0
+      P: ${radians(20)}
+      Y: ${radians(70)}
+      post_Y: 0.0
+      
+    - name: mid_cam
+      visualize: True
+      x: 0.74
+      y: 0.0
+      z: 2.2
+      R: 0
+      P: ${radians(20)}
+      Y: ${radians(0)}
+      post_Y: ${radians(0)}
+
+    - name: right_cam
+      visualize: True
+      x: 0.74
+      y: -0.5
+      z: 2.2
+      R: 0
+      P: ${radians(20)}
+      Y: ${radians(-70)}
+      post_Y: 0.0
+
+lidar:
+    - name: os0
+      type: 32_beam
+      x: 1.0
+      y: 0
+      z: 1.39
+      R: ${radians(0)}
+      P: ${radians(7)}
+      Y: 0
+      post_Y: 0.0
+
+    - name: os1
+      type: 32_beam
+      x: -1.15
+      y: 0
+      z: 2.3
+      R: ${radians(0)}
+      P: ${radians(-5)}
+      Y: 0
+      post_Y: ${radians(180)}
+
+wamv_ball_shooter:
+    - name: ball_shooter
+      x: 0.55 
+      y: -0.3 
+      z: 1.3
+      pitch: ${radians(-45)}
+      yaw: 0.0
+wamv_pinger:
+    - sensor_name: receiver
+      position: 1.0 0 -1.0
