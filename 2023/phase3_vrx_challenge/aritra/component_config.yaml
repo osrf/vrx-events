@@ -55,7 +55,7 @@ lidar:
 wamv_ball_shooter:
     - name: ball_shooter
       x: 0.65 
-      y: 0.8
+      y: 0.5
       z: 1.5
       pitch: ${radians(-53.5)}
       yaw: 0.0
