@@ -1,39 +1,30 @@
 wamv_camera:
-    - name: front_camera
+    - name: front_left_camera
       visualize: False
       x: 0.75
-      y: 0
-      z: 1.5
-      R: 0
-      P: ${radians(15)}
-      Y: 0
-      post_Y: 0.0
-    - name: right_camera
-      visualize: False
-      x: 0
-      y: 0.47
+      y: 0.1
       z: 1.5
       R: 0.0
       P: ${radians(15)}
-      Y: 1.507
+      Y: 0.0
       post_Y: 0.0
-    - name: left_camera
+    - name: front_right_camera
       visualize: False
-      x: 0
-      y: -0.47
+      x: 0.75
+      y: -0.1
       z: 1.5
-      R: 0
+      R: 0.0
       P: ${radians(15)}
-      Y: -1.507
+      Y: 0.0
       post_Y: 0.0
-    - name: rear_camera
+    - name: far_left_camera
       visualize: False
-      x: -0.75
+      x: 0.75
       y: 0.3
       z: 1.5
-      R: 0
+      R: 0.0
       P: ${radians(15)}
-      Y: 3.14
+      Y: 0.0
       post_Y: 0.0
 wamv_gps:
     - name: gps_wamv
@@ -62,18 +53,12 @@ lidar:
       Y: 0.0
       post_Y: 0.0
 wamv_ball_shooter:
-    - name: ball_shooter_front
+    - name: ball_shooter
       x: 0.55 
       y: -0.3 
       z: 1.3
       pitch: ${radians(-20)}
       yaw: 0.0
-    - name: ball_shooter_rear
-      x: -0.8 
-      y: -0.3 
-      z: 1.3
-      pitch: ${radians(-20)}
-      yaw: 3.14
 wamv_pinger:
     - sensor_name: receiver
       position: 1.0 0 -1.0
