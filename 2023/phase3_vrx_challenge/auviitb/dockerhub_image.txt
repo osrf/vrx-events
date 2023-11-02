@@ -1,1 +1,1 @@
-sparsh2718/vrx_phase_3:v4
+sparsh2718/vrx_phase_3:latest
