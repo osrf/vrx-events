@@ -24,7 +24,7 @@ wamv_camera:
       y: 0.5
       z: 2.2
       R: 0
-      P: ${radians(20)}
+      P: ${radians(15)}
       Y: ${radians(70)}
       post_Y: 0.0
       
@@ -34,7 +34,7 @@ wamv_camera:
       y: 0.0
       z: 2.2
       R: 0
-      P: ${radians(20)}
+      P: ${radians(15)}
       Y: ${radians(0)}
       post_Y: ${radians(0)}
 
@@ -44,7 +44,7 @@ wamv_camera:
       y: -0.5
       z: 2.2
       R: 0
-      P: ${radians(20)}
+      P: ${radians(15)}
       Y: ${radians(-70)}
       post_Y: 0.0
 
@@ -71,9 +71,9 @@ lidar:
 
 wamv_ball_shooter:
     - name: ball_shooter
-      x: 0.55 
-      y: -0.3 
-      z: 1.3
+      x: 0.74
+      y: -0.4 
+      z: 2.25
       pitch: ${radians(-45)}
       yaw: 0.0
 wamv_pinger:
