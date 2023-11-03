@@ -1,0 +1,1 @@
+wamvtan/vrx:latest
