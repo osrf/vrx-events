@@ -1,1 +1,1 @@
-wmvtan/vrx:latest
+wamvtan/vrx:latest
